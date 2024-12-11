@@ -142,7 +142,7 @@
         {
             "name": "Hack Store",
             "description": "Use a free alternative app store and get a Google Developer account.",
-            "website": null,
+            "website": "https://www.hackstore.dev/",
             "slack": "https://slack.com/archives/C07BGFG6CDQ",
             "slackChannel": "#hack-store",
             "status": "upcoming"
