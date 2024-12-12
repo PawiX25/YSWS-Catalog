@@ -1,11 +1,10 @@
-
 {
     "indefinite": [
         {
             "name": "Sprig",
             "description": "Build a JS game and play it on your own console.",
             "website": "https://sprig.hackclub.com/",
-            "slack": "https://slack.com/archives/C02UN35M7LG",
+            "slack": "https://hackclub.slack.com/archives/C02UN35M7LG",
             "slackChannel": "#sprig",
             "status": "active"
         },
@@ -13,7 +12,7 @@
             "name": "OnBoard",
             "description": "Design a PCB and receive a $100 grant.",
             "website": "https://hackclub.com/onboard",
-            "slack": "https://slack.com/archives/C056AMWSFKJ",
+            "slack": "https://hackclub.slack.com/archives/C056AMWSFKJ",
             "slackChannel": "#electronics",
             "status": "active"
         },
@@ -21,7 +20,7 @@
             "name": "OnBoard Live",
             "description": "Design a PCB live on YouTube for $5/hour.",
             "website": null,
-            "slack": "https://slack.com/archives/C07F3EA2L8G",
+            "slack": "https://hackclub.slack.com/archives/C07F3EA2L8G",
             "slackChannel": "#onboard-live",
             "status": "active"
         },
@@ -29,7 +28,7 @@
             "name": "Boba Drops",
             "description": "Build a website and get boba!",
             "website": "https://boba.hackclub.com/",
-            "slack": "https://slack.com/archives/C06UJR8QW0M",
+            "slack": "https://hackclub.slack.com/archives/C06UJR8QW0M",
             "slackChannel": "#boba",
             "status": "active"
         },
@@ -37,7 +36,7 @@
             "name": "Hackaccino",
             "description": "Build a 3D website and get a free frappuccino.",
             "website": "https://fraps.hackclub.com/",
-            "slack": "https://slack.com/archives/C078DFVL5LZ",
+            "slack": "https://hackclub.slack.com/archives/C078DFVL5LZ",
             "slackChannel": "#fraps",
             "status": "active"
         },
@@ -45,7 +44,7 @@
             "name": "Cider",
             "description": "Create an iOS app and receive a $100 Apple Developer account to publish it.",
             "website": "https://cider.hackclub.com/",
-            "slack": "https://slack.com/archives/C073DTGENJ2",
+            "slack": "https://hackclub.slack.com/archives/C073DTGENJ2",
             "slackChannel": "#cider",
             "status": "active"
         },
@@ -53,29 +52,38 @@
             "name": "Anchor",
             "description": "Design a VTuber-style logo for your High Seas project and receive custom stickers.",
             "website": "https://anchor.hackclub.com/",
-            "slack": "https://slack.com/archives/C07V5401VMY",
+            "slack": "https://hackclub.slack.com/archives/C07V5401VMY",
             "slackChannel": "#anchor",
             "status": "active"
         }
     ],
     "limitedTime": [
         {
+            "name": "High Seas",
+            "description": "Work on projects, earn doubloons, and compete in the Wonderdome.",
+            "website": "https://highseas.hackclub.com/",
+            "slack": "https://hackclub.slack.com/archives/C07PZMBUNDS",
+            "slackChannel": "#high-seas",
+            "status": "active",
+            "deadline": "2025-01-31T23:59:59"
+        },
+        {
             "name": "Asylum",
             "description": "Fast-paced hardware YSWS challenges.",
             "website": null,
-            "slack": "https://slack.com/archives/C083CCAAHM1",
+            "slack": "https://hackclub.slack.com/archives/C083CCAAHM1",
             "slackChannel": "#asylum",
             "status": "active",
             "deadline": "2024-12-11T23:59:59"
         },
         {
-            "name": "Pyramid Scheme",
-            "description": "Put up Hack Club posters to earn prizes.",
-            "website": null,
-            "slack": "https://slack.com/archives/C07N1TCHY3T",
-            "slackChannel": "#pyramid-scheme",
+            "name": "BrowserBuddy",
+            "description": "Build a Chrome extension, and Hack Club provides $30 to launch it on Chrome Web Store.",
+            "website": "https://browserbuddy.hackclub.com/",
+            "slack": "https://hackclub.slack.com/archives/C07MQBTNVRU",
+            "slackChannel": "#browser-buddy",
             "status": "active",
-            "deadline": "2024-12-11T23:59:59"
+            "deadline": "2024-12-31T23:59:59"
         },
         {
             "name": "HackCraft",
@@ -105,25 +113,16 @@
             "name": "Cascade",
             "description": "Create animations with CSS and receive art supplies.",
             "website": "https://cascade.hackclub.com/",
-            "slack": "https://slack.com/archives/C07QA8HD48N",
+            "slack": "https://hackclub.slack.com/archives/C07QA8HD48N",
             "slackChannel": "#cascade-ysws",
             "status": "active",
             "deadline": "2024-12-14T23:59:59"
         },
         {
-            "name": "High Seas",
-            "description": "Work on projects, earn doubloons, and compete in the Wonderdome.",
-            "website": "https://highseas.hackclub.com/",
-            "slack": "https://slack.com/archives/C07PZMBUNDS",
-            "slackChannel": "#high-seas",
-            "status": "active",
-            "deadline": "2025-01-31T23:59:59"
-        },
-        {
             "name": "Riceathon",
             "description": "Customize your Linux install, and get programmer socks or a Blåhaj.",
             "website": "https://github.com/HackClub/riceathon",
-            "slack": "https://slack.com/archives/C07MLF9A8H5",
+            "slack": "https://hackclub.slack.com/archives/C07MLF9A8H5",
             "slackChannel": "#riceathon",
             "status": "active",
             "deadline": "2025-01-10T23:59:59"
@@ -134,7 +133,7 @@
             "name": "Forge",
             "description": "Design a 3D model that solves a problem and receive a custom 3D printer.",
             "website": "https://forge.hackclub.com/",
-            "slack": "https://slack.com/archives/C078GBDKC03",
+            "slack": "https://hackclub.slack.com/archives/C078GBDKC03",
             "slackChannel": "#forge-updates",
             "status": "upcoming"
         },
@@ -142,7 +141,7 @@
             "name": "Vine YSWS",
             "description": "Create a song using open-source music software and receive a vinyl with your song.",
             "website": "https://vineysws.vercel.app/",
-            "slack": "https://slack.com/archives/C07N0VA3YGJ",
+            "slack": "https://hackclub.slack.com/archives/C07N0VA3YGJ",
             "slackChannel": "#vine-ysws",
             "status": "upcoming"
         },
@@ -150,7 +149,7 @@
             "name": "Google Dev YSWS",
             "description": "Make an Android app and earn credits for a Google Developer account.",
             "website": null,
-            "slack": "https://slack.com/archives/C07N06B1FDY",
+            "slack": "https://hackclub.slack.com/archives/C07N06B1FDY",
             "slackChannel": "#google-dev-ysws",
             "status": "upcoming"
         },
@@ -158,7 +157,7 @@
             "name": "Hack Store",
             "description": "Use a free alternative app store and get a Google Developer account.",
             "website": "https://www.hackstore.dev/",
-            "slack": "https://slack.com/archives/C07BGFG6CDQ",
+            "slack": "https://hackclub.slack.com/archives/C07BGFG6CDQ",
             "slackChannel": "#hack-store",
             "status": "upcoming"
         },
@@ -166,7 +165,7 @@
             "name": "Docs",
             "description": "Submit awesome documents, and Hack Club will print them into a book.",
             "website": null,
-            "slack": "https://slack.com/archives/C07R7P3TT7W",
+            "slack": "https://hackclub.slack.com/archives/C07R7P3TT7W",
             "slackChannel": "#docs-ysws",
             "status": "upcoming"
         },
@@ -174,16 +173,16 @@
             "name": "Draw Sticker Get Sticker",
             "description": "Draw a sticker, and Hack Club will print and mail it to you.",
             "website": null,
-            "slack": "https://slack.com/archives/C07Q862TYLQ",
+            "slack": "https://hackclub.slack.com/archives/C07Q862TYLQ",
             "slackChannel": "#draw-sticker-get-sticker",
             "status": "upcoming",
-            "deadline": "Opens October 15th"
+            "opens": "Opens October 15th"
         },
         {
             "name": "Light Up",
             "description": "Design an electronic circuit with lights, and Hack Club sends you the components and gifts.",
             "website": null,
-            "slack": "https://slack.com/archives/C07RNEJ13LJ",
+            "slack": "https://hackclub.slack.com/archives/C07RNEJ13LJ",
             "slackChannel": "#lightup-ysws",
             "status": "upcoming"
         },
@@ -191,7 +190,7 @@
             "name": "Aether YSWS",
             "description": "Build a Windows app, and Hack Club provides a Microsoft Store developer account.",
             "website": null,
-            "slack": "https://slack.com/archives/C07V78URSGL",
+            "slack": "https://hackclub.slack.com/archives/C07V78URSGL",
             "slackChannel": "#aether-ysws",
             "status": "upcoming"
         },
@@ -199,7 +198,7 @@
             "name": "Onward",
             "description": "Build a robot using Arduino and receive one.",
             "website": null,
-            "slack": "https://slack.com/archives/C079G5MKC93",
+            "slack": "https://hackclub.slack.com/archives/C079G5MKC93",
             "slackChannel": "#onward",
             "status": "upcoming"
         },
@@ -207,7 +206,7 @@
             "name": "Hack RTL",
             "description": "Create a desktop app using RTL-SDR, and Hack Club sends you a dongle.",
             "website": "https://hack-rtl.vercel.app/",
-            "slack": "https://slack.com/archives/C082S5V95G8",
+            "slack": "https://hackclub.slack.com/archives/C082S5V95G8",
             "slackChannel": "#hack-rtl",
             "status": "upcoming"
         },
@@ -215,7 +214,7 @@
             "name": "Lab in a Box",
             "description": "Collaborate on projects in teams with resources provided by Hack Club.",
             "website": null,
-            "slack": "https://slack.com/archives/C082G4HLZDK",
+            "slack": "https://hackclub.slack.com/archives/C082G4HLZDK",
             "slackChannel": "#lab-in-a-box",
             "status": "upcoming"
         }
@@ -225,86 +224,91 @@
             "name": "Community Newsletter",
             "description": "Receive a fully handwritten monthly newsletter.",
             "website": null,
-            "slack": "https://slack.com/archives/C07KS2794LX",
+            "slack": "https://hackclub.slack.com/archives/C07KS2794LX",
             "slackChannel": "#community-newsletter",
             "status": "active"
         }
     ],
     "completed": [
         {
-            "name": "Arcade",
-            "description": "The summer is yours for the making",
-            "website": "https://hackclub.com/arcade",
-            "slack": "https://hackclub.slack.com/archives/C06SBHMQU8G",
-            "slackChannel": "#hack-hour",
-            "status": "completed"
+            "name": "Pyramid Scheme",
+            "description": "Put up Hack Club posters to earn prizes.",
+            "website": null,
+            "slack": "https://hackclub.slack.com/archives/C07N1TCHY3T",
+            "slackChannel": "#pyramid-scheme",
+            "status": "completed",
+            "ended": "Ended December 10th"
         },
         {
             "name": "Blot",
             "description": "Write code, make art, and get a drawing machine.",
             "website": "https://blot.hackclub.com/",
-            "slack": "https://slack.com/archives/C04GCH8A91D",
+            "slack": "https://hackclub.slack.com/archives/C04GCH8A91D",
             "slackChannel": "#blot",
-            "status": "completed"
-        },
-        {
-            "name": "BrowserBuddy",
-            "description": "Build a Chrome extension, and Hack Club provides $30 to launch it on Chrome Web Store.",
-            "website": "https://browserbuddy.hackclub.com/",
-            "slack": "https://slack.com/archives/C07MQBTNVRU",
-            "slackChannel": "#browser-buddy",
             "status": "completed",
-            "ended": "Ended November 20th"
-        },
-        {
-            "name": "HAM Radio YSWS",
-            "description": "Related to HAM radio projects.",
-            "website": null,
-            "slack": "https://slack.com/archives/C01G6UJT2RM",
-            "slackChannel": "#hamradio",
-            "status": "completed"
+            "ended": "Ended November 21st"
         },
         {
             "name": "Boba Manor",
             "description": "Website building with rewards.",
             "website": "https://manor.hackclub.com/",
-            "slack": "https://slack.com/archives/C06UJR8QW0M",
+            "slack": "https://hackclub.slack.com/archives/C06UJR8QW0M",
             "slackChannel": "#boba",
-            "status": "completed"
-        },
-        {
-            "name": "LLM YSWS",
-            "description": "Projects using language models.",
-            "website": null,
-            "slack": "https://slack.com/archives/C07KYNWR10W",
-            "slackChannel": "#llm / #zrl-land",
-            "status": "completed"
-        },
-        {
-            "name": "The Bin",
-            "description": "Hardware-related projects.",
-            "website": "https://bin.hackclub.com/",
-            "slack": "https://slack.com/archives/C01FXNNF6F2",
-            "slackChannel": "#electronics",
-            "status": "completed"
-        },
-        {
-            "name": "Retrospect",
-            "description": "Create a DOS game and have it delivered on a floppy disk.",
-            "website": "https://retrospect.hackclub.com/",
-            "slack": "https://slack.com/archives/C07MUFXNG82",
-            "slackChannel": "#retrospect",
             "status": "completed",
-            "ended": "Ended October 8th"
+            "ended": "Ended October 31st"
         },
         {
             "name": "Hackpad",
             "description": "Design a macropad and receive it.",
             "website": "https://github.com/hackclub/hackpad",
-            "slack": "https://slack.com/archives/C07LESGH0B0",
+            "slack": "https://hackclub.slack.com/archives/C07LESGH0B0",
             "slackChannel": "#hackpad",
             "status": "completed",
             "ended": "Ended October 21st"
         }
+        {
+            "name": "Retrospect",
+            "description": "Create a DOS game and have it delivered on a floppy disk.",
+            "website": "https://retrospect.hackclub.com/",
+            "slack": "https://hackclub.slack.com/archives/C07MUFXNG82",
+            "slackChannel": "#retrospect",
+            "status": "completed",
+            "ended": "Ended October 8th"
+        },
+        {
+            "name": "LLM YSWS",
+            "description": "Projects using language models.",
+            "website": null,
+            "slack": "https://hackclub.slack.com/archives/C07KYNWR10W",
+            "slackChannel": "#llm / #zrl-land",
+            "status": "completed",
+            "ended": "Ended October 1st"
+        },
+        {
+            "name": "Arcade",
+            "description": "The summer is yours for the making",
+            "website": "https://hackclub.com/arcade",
+            "slack": "https://hackclub.slack.com/archives/C06SBHMQU8G",
+            "slackChannel": "#hack-hour",
+            "status": "completed",
+            "ended": "Ended September 31st"
+        },
+        {
+            "name": "The Bin",
+            "description": "Hardware-related projects.",
+            "website": "https://bin.hackclub.com/",
+            "slack": "https://hackclub.slack.com/archives/C01FXNNF6F2",
+            "slackChannel": "#electronics",
+            "status": "completed",
+            "ended": "Ended September 31st"
+        },
+        {
+            "name": "HAM Radio YSWS",
+            "description": "Related to HAM radio projects.",
+            "website": null,
+            "slack": "https://hackclub.slack.com/archives/C01G6UJT2RM",
+            "slackChannel": "#hamradio",
+            "status": "completed"
+        },
     ]
 }
