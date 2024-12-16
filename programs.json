@@ -115,7 +115,7 @@
             "website": "https://cascade.hackclub.com/",
             "slack": "https://hackclub.slack.com/archives/C07QA8HD48N",
             "slackChannel": "#cascade-ysws",
-            "status": "active",
+            "status": "completed",
             "deadline": "2024-12-14T23:59:59"
         },
         {
@@ -160,7 +160,7 @@
             "website": null,
             "slack": "https://hackclub.slack.com/archives/C07N06B1FDY",
             "slackChannel": "#google-dev-ysws",
-            "status": "upcoming"
+            "status": "active"
         },
         {
             "name": "Hack Store",
