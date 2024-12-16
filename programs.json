@@ -155,11 +155,12 @@
             "status": "upcoming"
         },
         {
-            "name": "Google Dev YSWS",
+            "name": "Dessert",
             "description": "Make an Android app and earn credits for a Google Developer account.",
-            "website": null,
+            "website": https://dessert-android.netlify.app/,
+            "Second-Website":https://dessert-android.netlify.app/,
             "slack": "https://hackclub.slack.com/archives/C07N06B1FDY",
-            "slackChannel": "#google-dev-ysws",
+            "slackChannel": "#dessert",
             "status": "active"
         },
         {
