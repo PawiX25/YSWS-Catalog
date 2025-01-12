@@ -1,4 +1,47 @@
 let programs = {};
+const apiUrl = "https://api2.hackclub.com/v0.1/Unified%20YSWS%20Projects%20DB/YSWS%20Programs?cache=true";
+var participants = []
+
+function loadParticipants() {
+    fetch(apiUrl).then(response => {
+        if (!response.ok) {
+            throw new Error(`Failed to Fetch Participants Data! ${response.status}`);
+        }
+        return response.json();
+    }).then(data => {
+          participants = data.map(item => ({
+            name: item.fields.Name,
+            total: item.fields["Unweighted–Total"]
+        }));
+        
+        console.log(participants);
+        setTimeout(function(){
+            renderProgramsAPI()
+        }, 500)
+
+    })
+    .catch(error => {
+        console.error("Error fetching data:", error);
+    });
+}
+loadParticipants()
+
+function getParticipantsByName(programName) {
+    if (!participants.length) {
+        console.error("Data has not been fetched yet. Please wait...");
+        return;
+    }
+
+    const program = participants.find(item => item.name.toLowerCase() === programName.toLowerCase());
+    
+    if (program) {
+        console.log(`Program: ${program.name}, Participants: ${program.total}`);
+        return program.total;
+    } else {
+        console.log(`Program "${programName}" not found.`);
+        return null;
+    }
+}
 
 function isEventEnded(deadline) {
     if (!deadline) return false;
@@ -91,6 +134,11 @@ function getDeadlineClass(deadlineStr) {
     return '';
 }
 
+function formatAPIParticipants(name) {
+    if (name === undefined) return '';
+    return getParticipantsByName(name)
+}
+
 function formatParticipants(count) {
     if (count === undefined) return '';
     return `${count.toLocaleString()} participant${count === 1 ? '' : 's'}`;
@@ -105,8 +153,35 @@ function createProgramCard(program) {
     const encodedProgram = encodeURIComponent(JSON.stringify(program));
     
     const participantsText = program.participants !== undefined ? 
-        `<div class="program-participants">${formatParticipants(program.participants)}</div>` : '';
+    `<div class="program-participants">${formatParticipants(program.participants)}</div>` : '';    
+    return `
+        <div class="card program-card ${opensClass}" data-program="${encodedProgram}">
+            <div class="program-header">
+                <h3>${program.name}</h3>
+                <span class="program-status status-${program.status}">${program.status}</span>
+            </div>
+            <p>${program.description}</p>
+            <div class="program-deadline ${deadlineClass}">${deadlineText}</div>
+            ${participantsText}
+            <div class="program-links">
+                ${program.website ? `<a href="${program.website}" target="_blank">Website</a>` : ''}
+                ${program.slack ? `<a href="${program.slack}" target="_blank">${program.slackChannel}</a>` : ''}
+            </div>
+        </div>
+    `;
+}
+
+
+function createProgramCardAPI(program) {
+    const deadlineText = formatDeadline(program.deadline, program.opens);
+    const deadlineClass = getDeadlineClass(program.deadline);
     
+    const opensClass = program.opens && new Date() < new Date(program.opens) ? 'opens-soon' : '';
+    
+    const encodedProgram = encodeURIComponent(JSON.stringify(program));
+    
+    const participantsText = program.participants !== undefined ? 
+    `<div class="program-participants">${formatAPIParticipants(program.name)}</div>` : '';    
     return `
         <div class="card program-card ${opensClass}" data-program="${encodedProgram}">
             <div class="program-header">
@@ -190,7 +265,7 @@ function openModal(program) {
     if (program.participants !== undefined) {
         detailsHTML += `
             <h3>Participation</h3>
-            <p>${formatParticipants(program.participants)}</p>
+            <p>${formatAPIParticipants(program.name)}</p>
         `;
     }
     
@@ -278,6 +353,37 @@ function renderPrograms() {
                 <h2 class="headline">${category.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}</h2>
                 <div class="programs-grid">
                     ${programsList.map(program => createProgramCard(program)).join('')}
+                </div>
+            `;
+            container.appendChild(section);
+        }
+    } else {
+        const sortedPrograms = sortPrograms(programs, currentSort);
+        const section = document.createElement('section');
+        section.className = 'category-section';
+        section.innerHTML = `
+            <div class="programs-grid">
+                ${sortedPrograms.map(program => createProgramCard(program)).join('')}
+            </div>
+        `;
+        container.appendChild(section);
+    }
+}
+
+function renderProgramsAPI() {
+    const container = document.getElementById('programs-container');
+    container.innerHTML = '';
+    const activeCount = countActivePrograms();
+    document.getElementById('active-count').textContent = activeCount;
+    
+    if (currentSort === 'default') {
+        for (const [category, programsList] of Object.entries(programs)) {
+            const section = document.createElement('section');
+            section.className = 'category-section';
+            section.innerHTML = `
+                <h2 class="headline">${category.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}</h2>
+                <div class="programs-grid">
+                    ${programsList.map(program => createProgramCardAPI(program)).join('')}
                 </div>
             `;
             container.appendChild(section);
@@ -477,3 +583,4 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.modal-prev').addEventListener('click', () => navigateModal(-1));
     document.querySelector('.modal-next').addEventListener('click', () => navigateModal(1));
 });
+
