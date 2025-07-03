@@ -695,4 +695,11 @@ drafts:
   slackChannel: "#boba"
   status: ended
   ended: '2024-12-31T23:59:59'
+- name: Extensify
+  description: Make an IDE extension and we'll send you a keychain or a premium IDE Theme for VS Code or Sublime Text.
+  website: https://extensify.hackclub.com/
+  slack: https://hackclub.slack.com/archives/C094H3V1Y81
+  slackChannel: "#extensify"
+  status: active
+  deadline: '2025-07-07T23:59:59'
 
